@@ -1,65 +1,49 @@
-insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
-values(54,'1234567890','22/01/1000','22:00')
+-- Inserciones en registros_entrada
+INSERT INTO registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) VALUES
+(54, '1234567890', '1000-01-22', '22:00', 2201),
+(50, '1324647434', '1987-11-02', '02:00', 2202),
+(40, '0987654321', '1945-12-03', '12:30', 2203),
+(20, '1423567860', '1947-01-02', '12:00', 2204),
+(60, '0987654321', '1995-01-13', '02:30', 2205),
+(554, '1523563598', '1000-01-22', '22:00', 2201),
+(51, '1234567856', '2004-01-30', '24:00', 2202),
+(41, '1092345976', '1985-02-23', '12:36', 2203),
+(29, '0192837465', '0001-12-24', '12:00', 2204),
+(88, '1982345678', '1955-01-13', '02:30', 2205);
+INSERT INTO registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) VALUES
+(12345, '1754416489', '2023-06-18', '07:00', 2201),
+(12355, '1758254591', '2023-08-03', '14:00', 2202),
+(12346, '1715974492', '2022-03-25', '23:00', 2203),
+(12347, '1735642583', '2015-12-28', '16:00', 2204),
+(12389, '1707416984', '2012-07-16', '08:00', 2205),
+(12349, '1778541235', '2013-03-17', '10:00', 2201),
+(12310, '1742158637', '2017-05-14', '19:00', 2202),
+(12311, '1756321784', '2004-05-15', '20:00', 2203),
+(12358, '1712546328', '2008-07-07', '21:00', 2204),
+(12378, '1725785413', '2023-09-02', '04:00', 2205);
+INSERT INTO registros_entrada (codigo_registro, cedula_empleado, fecha, hora, codigo_empleado) VALUES
+(1, '0012345678', '2023-08-01', '08:15', 2201),
+(2, '0012345679', '2023-08-02', '09:20', 2202),
+(3, '0012345680', '2023-08-03', '08:45', 2203),
+(4, '0012345681', '2023-08-04', '09:10', 2204),
+(5, '0012345682', '2023-08-05', '10:30', 2205),
+(6, '0012345683', '2023-08-06', '08:00', 2201),
+(7, '0012345684', '2023-08-07', '08:30', 2202),
+(8, '0012345685', '2023-08-08', '09:00', 2203),
+(9, '0012345686', '2023-08-09', '09:45', 2204),
+(10, '0012345687', '2023-08-10', '10:00', 2205);
 
-insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
-values(5,'1324647434','2/11/1987','2:00')
-
-insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
-values(4,'0987654321','3/12/1945','12:30')
-
-insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
-values(2,'1423567860','2/1/1947','12:00')
-
-insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
-values(6,'0987654321','13/1/1995','2:30')
 
 
-insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
-values(554,'1523563598','22/01/1000','22:00')
-
-insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
-values(51,'1234567856','30/1/2004','24:00')
-
-insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
-values(41,'1092345976','23/2/1985','12:36')
-
-insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
-values(29,'0192837465','24/12/0001','12:00')
-
-insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
-values(88,'1982345678','13/1/1955','2:30')
+-- Inserts en la tabla empleado
+INSERT INTO empleado (codigo_empleado, nombre, fecha, hora) VALUES
+(2201, 'Juan Perez', '2023-08-01', '08:30'),
+(2202, 'Ana Gomez', '2023-08-02', '09:00'),
+(2203, 'Luis Martinez', '2023-08-03', '10:00'),
+(2204, 'María López', '2023-08-04', '08:45'),
+(2205, 'Francisco Torres', '2023-08-05', '09:15');
 
 
-
-
-insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values(12345, '1754416489', '18/06/2023', '7:00');
-
-insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values(12355, '1758254591', '03/08/2023', '14:00');
-
-insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values(12346, '1715974492', '25/03/2022', '23:00');
-
-insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values(12347, '1735642583', '28/12/2015', '16:00');
-
-insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values(12389, '1707416984', '16/07/2012', '8:00');
-
-insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values(12349, '1778541235', '17/03/2013', '10:00');
-
-insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values(12310, '1742158637', '14/05/2017', '19:00');
-
-insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values(12311, '1756321784', '15/05/2004', '20:00');
-
-insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values(12358, '1712546328', '07/07/2008', '21:00');
-
-insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values(12378, '1725785413', '02/09/2023', '4:00');
 
 select * from registros_entrada
+select * from empleado

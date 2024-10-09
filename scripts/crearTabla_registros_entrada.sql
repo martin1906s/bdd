@@ -1,8 +1,20 @@
--- crear tabla registros entrada
-create table registros_entrada(
-	codigo_registro int not null,
-	cedula_empleado char(10) not null,
-	fecha date not null,
-	hora time not null,
-	constraint codigoRegistro_pk primary key(codigo_registro)
+-- Crear tabla empleado
+CREATE TABLE empleado (
+    codigo_empleado INT NOT NULL,
+    nombre VARCHAR(25) NOT NULL,
+    fecha DATE NOT NULL,
+    hora TIME NOT NULL,
+    CONSTRAINT empleado_pk PRIMARY KEY (codigo_empleado)
+)
+
+-- Crear tabla registros_entrada
+CREATE TABLE registros_entrada (
+    codigo_registro INT NOT NULL,
+    cedula_empleado CHAR(10) NOT NULL,
+    fecha DATE NOT NULL,
+    hora TIME NOT NULL,
+    codigo_empleado INT NOT NULL,
+    CONSTRAINT registros_entrada_pk PRIMARY KEY (codigo_registro),
+    CONSTRAINT registros_entrada_empleado_fk FOREIGN KEY (codigo_empleado)
+    REFERENCES empleado(codigo_empleado)
 )
