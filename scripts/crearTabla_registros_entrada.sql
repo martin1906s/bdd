@@ -18,3 +18,5 @@ CREATE TABLE registros_entrada (
     CONSTRAINT registros_entrada_empleado_fk FOREIGN KEY (codigo_empleado)
     REFERENCES empleado(codigo_empleado)
 )
+
+select * from

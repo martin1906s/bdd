@@ -65,4 +65,20 @@ INSERT INTO videojuegos (codigo, nombre, descripcion, valoracion) VALUES
 -- Videojuego con nombre "God of War"
 INSERT INTO videojuegos (codigo, nombre, descripcion, valoracion) VALUES
 (50, 'God of War 2', 'Mitología y combates épicos', 9.8);
+
+-- Inserts para la tabla plataformas
+INSERT INTO plataformas (id_plataforma, nombre_plataforma, codigo_videojuego)
+VALUES 
+(1, 'PlayStation 5', 1),
+(2, 'Xbox Series X', 1),
+(3, 'Nintendo Switch', 1),
+(4, 'PC', 1),
+(5, 'PlayStation 4', 2),
+(6, 'Xbox One', 2),
+(7, 'Nintendo Switch', 2),
+(8, 'PC', 2),
+(9, 'PlayStation 5', 3),
+(10, 'Xbox Series X', 3);
+
+
 select * from videojuegos

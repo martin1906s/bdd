@@ -1,5 +1,5 @@
 insert into clientes(cedula,nombre,apellido)
-values('1715514788','Monica','Grados');
+values('1712514788','Monica','Grados');
 insert into clientes(cedula,nombre,apellido)
 values('5672347821','Andrea','Palacios');
 insert into clientes(cedula,nombre,apellido)
@@ -18,3 +18,4 @@ insert into clientes(cedula,nombre,apellido)
 values('7982346488','Javier','Beltran');
 insert into clientes(cedula,nombre,apellido)
 values('1712345788','Marcelo','Alban');
+
