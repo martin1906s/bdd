@@ -4,8 +4,16 @@ select * from registros_entrada where hora>'8:00'
 
 
 -- Reto 24 --
-select re.cedula_empleado, em.nombre from registros_entrada re, empleado em 
-where re.codigo_empleado=em.codigo_empleado and(re.fecha between '2023-08-01' and '2023-08-31' 
-or re.cedula_empleado like '17%' and re.hora between '08:00' and '12:00') 
-or (re.fecha between '2023-10-06' and '2023-10-20' 
-or re.cedula_empleado like '08%' and re.hora between '09:00' and '13:00') 
+select re.cedula_empleado, re.fecha, em.nombre from registros_entrada re, empleado em 
+where re.codigo_empleado=em.codigo_empleado and re.fecha between '2023-08-01' and '2023-08-31' 
+or re.cedula_empleado like '17%' and re.hora between '08:00' and '12:00' 
+or re.fecha between '2023-10-06' and '2023-10-20' 
+or re.cedula_empleado like '08%' and re.hora between '09:00' and '13:00' 
+
+SELECT e.codigo_empleado, e.nombre
+FROM empleado e
+WHERE e.codigo_empleado = (
+    SELECT r.codigo_empleado
+    FROM registros_entrada r
+    WHERE r.cedula_empleado = '2201'
+);
