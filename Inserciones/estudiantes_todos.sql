@@ -45,3 +45,5 @@ values (1235476809,'Anabel','Perlaza','WPerlaza18@gmail.com','12/04/2000');
 insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimineto)
 values (1735476810,'Sofía','Jimenez','SofiJz22@gmail.com','22/01/2001');
 select * from estudiantes
+select * from profesores
+delete from estudiantes where cedula='1751013192'
