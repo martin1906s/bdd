@@ -37,7 +37,7 @@ values('P001', 'Coca cola 300 ml', 0.70, 0.55, 'C001'),
 
 
 create table historial_movimientos(
-	id int not null,
+	id serial not null,
 	id_producto char(4)not null,
 	cantidad int not null,
 	fecha_movimiento timestamp,
@@ -48,9 +48,9 @@ add constraint productos_historial_movimientos_FK foreign key(id_producto)
 references productos(id);
 --inserts movimientos
 INSERT INTO historial_movimientos (id,id_producto, cantidad, fecha_movimiento) 
-VALUES(1,'P001', 10, '2020-10-28 09:45'),
-(2,'P002', -3, '2020-10-28 10:49'),
-(3,'P001', 5, '2020-10-28 12:23');
+VALUES('P001', 10, '2020-10-28 09:45'),
+('P002', -3, '2020-10-28 10:49'),
+('P001', 5, '2020-10-28 12:23');
 
 --Seleccion de tablas
 select * from productos
